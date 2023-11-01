@@ -16,7 +16,7 @@ test("should lose after max wrong guesses", function(){
 
   const wrongLetters = 'zyxwvu';
   //FIXME: '7' needs to be changed to variable
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 6; i++) {
     const wrongGuesses = container.querySelector(`#${wrongLetters[i]}`);
     console.log('WRONG GUESSES', wrongGuesses)
     fireEvent.click(wrongGuesses);
